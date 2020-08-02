@@ -27,3 +27,9 @@ export const searchEditData = (params) => {  //编辑页查询数据
         url: `categories/${params}`,
     })
 }
+export const deleteItem = (params) => {  //删除分类
+    return request({
+        method: "delete",
+        url: `categories/${params}`,
+    })
+}
